@@ -1,0 +1,36 @@
+.hero {     
+    margin-right: auto;
+    margin-left: auto;
+background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../../images/header1x.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero__container {
+    max-width: 480px;
+        height: 400px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        text-align: center;
+}
+.hero__title {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 380px;
+    font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+}
+.hero__button {
+    @extend %button;
+   padding-left: 30px;
+   padding-right: 30px;
+}

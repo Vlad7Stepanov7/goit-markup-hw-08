@@ -1,0 +1,21 @@
+.thumb {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $accent-color;
+            transform: translateY(100%);
+            transition: transform 250ms $cubic-bezier;
+        }
+    
+         &:hover::before,
+         &:focus::before {
+            transform: translateY(0);
+        }
+}
