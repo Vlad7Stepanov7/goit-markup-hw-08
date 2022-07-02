@@ -10,12 +10,13 @@
     width: 100%;
     height: 796px;
     background-color: $main-background-color;
-    transform: translateY(-100%);
+    
+    transform: translateX(-100%);
        transition: transform 250ms $cubic-bezier;
 
     .page-header__button:hover &,
      .page-header__button:focus & {
-           transform: translateY(0);
+           transform: translateX(0);
         }
 
 }

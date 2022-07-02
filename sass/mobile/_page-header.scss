@@ -1,18 +1,19 @@
 .page-header {
-    position: relative;
+    
     margin-left: auto;
     margin-right: auto;
    width: 480px;
 border-bottom: 1px solid #ECECEC;
 }
 .page-header__container {
-
+position: relative;
     display: flex;
     align-items: center;
 
    
 }
 .page-header__button {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
