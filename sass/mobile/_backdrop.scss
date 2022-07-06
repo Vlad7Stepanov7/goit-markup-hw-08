@@ -7,7 +7,8 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 250ms $cubic-bezier;
-    z-index: 1;
+    overflow-y: scroll;
+    z-index: 19;
 }
 
 .backdrop__is-hidden {

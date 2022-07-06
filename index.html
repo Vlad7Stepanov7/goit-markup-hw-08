@@ -17,18 +17,19 @@
     <div class="container page-header__container">
         
         <a href="./index.html" class="logo"><span class="logo__text">Web</span>Studio</a>
-        <button type="button" class="page-header__button">
-            <svg class="page-header__menu-icon" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M8 14.667V12h24v2.667H8Zm0 6.666h24v-2.666H8v2.666ZM8 28h24v-2.667H8V28Z" />
-            </svg>
+        <button 
+        type="button" 
+        class="page-header__button is-open"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button>
+        <svg >
+            <use class="page-header__icon-open" href="./images/icons.svg#open-menu"></use>
+            <use class="page-header__icon-close" href="./images/icons.svg#close"></use>
+        </svg>
         </button>
-        <div class="overlay-menu">
-            <button type="button" class="overlay-menu__button">
-                <svg class="overlay-menu__icon">
-                    <use href="/images/icons.svg#close-menu"></use>
-                </svg>
-            </button>
+        
+        <div class="menu-container is-open" id="menu-container" data-menu>
         <nav class="page-header__nav">
             <ul class="list-nav">
                 <li class="list-nav__items">
@@ -85,7 +86,7 @@
                 <div class="modal">
                     <button type="button" class="button-modal-close data-modal-close" data-modal-close>
                         <svg class="button-modal-close__icon">
-                            <use href="./images/icons.svg#icon-close"></use>
+                            <use href="./images/icons.svg#close"></use>
                         </svg>
                     </button >
                     
@@ -219,7 +220,7 @@
                     <img srcset="./images/igor-354.jpg 1x, ./images/igor-450.jpg 1x, ./images/igor-708@2x.jpg 2x, ./images/igor-900@2x.jpg 2x"
                      src="images/igor-450.jpg"
                       alt="Фото Игоря Демьяненко"
-                      class="team__img" >
+                      class="img" >
                     <div class="team__container-members">
                         <h3 class="team__name">Игорь Демьяненко</h3>
                         <p class="team__text">Product Designer</p>
@@ -259,7 +260,7 @@
                     <img srcset="./images/olga-354.jpg 1x, ./images/olga-450.jpg 1x, ./images/olga-708@2x.jpg 2x, ./images/olga-900@2x.jpg 2x"
                      src="images/olga-450.jpg"
                       alt="Фото Ольги Репиной"
-                      class="team__img" >
+                      class="img" >
                     <div class="team__container-members">
                         <h3 class="team__name">Ольга Репина</h3>
                         <p class="team__text">Frontend Developer</p>
@@ -299,7 +300,7 @@
                     <img srcset="./images/nikola-354.jpg 1x, ./images/nikola-450.jpg 1x, ./images/nikola-708@2x.jpg 2x, ./images/nikola-900@2x.jpg 2x"
                      src="images/nikola-450.jpg"
                       alt="Фото Николая Тарасова"
-                      class="team__img" >
+                      class="img" >
                     <div class="team__container-members">
                         <h3 class="team__name">Николай Тарасов</h3>
                         <p class="team__text">Marketing</p>
@@ -339,7 +340,7 @@
                     <img srcset="./images/mixail-354.jpg 1x, ./images/mixail-450.jpg 1x, ./images/mixail-708@2x.jpg 2x, ./images/mixail-900@2x.jpg 2x"
                       src="images/mixail-450.jpg"
                       alt="Фото Михаила Ермакова"
-                     class="team__img" >
+                     class="img" >
                     <div class="team__container-members">
                         <h3 class="team__name">Михаил Ермаков</h3>
                         <p class="team__text">UI Designer</p>
@@ -488,5 +489,6 @@
     </div>
    </footer>
    <script src="./modal.js"></script>
+   <script src="./mobile.js"></script>
 </body>
 </html>

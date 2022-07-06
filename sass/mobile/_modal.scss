@@ -16,6 +16,7 @@
     .backdrop__is-hidden & {
         transform: translate(-50%, -50%) scale(1.2);
     }
+    z-index: 20;
 }
 
 .button-modal-close {
@@ -35,11 +36,13 @@
 }
 
 .button-modal-close__icon {
+    position: absolute;
     display: inline-block;
     width: 18px;
     height: 18px;
     margin: 0;
     padding: 0;
+    fill: #000;
     transition: fill 250ms $cubic-bezier;
 
     .button-modal-close:hover &,

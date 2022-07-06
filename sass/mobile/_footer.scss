@@ -1,31 +1,39 @@
 .footer {
     padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 68px;
-    padding-right: 97px;
-    background-color: #2F303A;
+        padding-bottom: 60px;
+        background-color: #2F303A;
 }
 
 .footer__container {
-    display: flex;
-    flex-wrap: wrap;
+    @media screen and (min-width:768px) {
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+    }
+    
 }
 
 .footer__container-address {
     width: 232px;
-    margin-left: auto;
-    margin-right: auto;
+    @media screen and (max-width:480px) {
+        margin-left: auto;
+            margin-right: auto;
+    }
     text-align: center;
 }
 
 .footer__container-social-network {
     width: 206px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
     text-align: center;
+    @media screen and (max-width:480px) {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+        }
     @media screen and (min-width:768px) {
-       
+       margin-left: 165px;
+       margin-top: 5px;
     }
 }
 
