@@ -17,6 +17,9 @@
         transform: translate(-50%, -50%) scale(1.2);
     }
     z-index: 20;
+    @media screen and (max-width:1200px) {
+        width: 528px;
+    }
 }
 
 .button-modal-close {

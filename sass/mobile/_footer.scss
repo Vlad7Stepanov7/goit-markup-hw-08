@@ -7,11 +7,14 @@
 .footer__container {
     @media screen and (min-width:768px) {
         display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            
     }
-    
+    @media screen and (max-width:1199px) {
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width:1200px) {
+        align-items: center;
+    }
 }
 
 .footer__container-address {
@@ -34,6 +37,10 @@
     @media screen and (min-width:768px) {
        margin-left: 165px;
        margin-top: 5px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+        margin-top: 0;
     }
 }
 

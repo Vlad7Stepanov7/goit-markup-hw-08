@@ -1,5 +1,8 @@
 .form-modal {
     width: 370px;
+    @media screen and (min-width:1200px) {
+        width: 448px;
+    }
 }
 
 .form-modal__title {
@@ -43,6 +46,9 @@
     &:focus {
         border: 1px solid $accent-color;
     }
+    @media screen and (min-width:1200px) {
+        width: 448px;
+    }
 }
 
 .form-modal__icon {
@@ -83,6 +89,9 @@
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
     }
+        @media screen and (min-width:1200px) {
+            width: 448px;
+        }
 }
 
 .treaty-agreement {
@@ -92,6 +101,7 @@
 .treaty-agreement__label {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .treaty-agreement__input {
@@ -125,6 +135,12 @@
     font-size: 12px;
         line-height: 1.16;
     margin-left: 8px;
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+            line-height: 1.71;
+        margin-left: 8.38px;
+    }
+    
 }
 
 .treaty-agreement__link {

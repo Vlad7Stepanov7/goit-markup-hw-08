@@ -6,9 +6,9 @@
 
 }
 .benefits__list {
- @media screen and (min-width:768px) {
     display: flex;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
+ @media screen and (max-width:768px) {
     margin: -15px;
  }
 }
@@ -18,9 +18,15 @@
                 margin-bottom: 30px;
             }
     }
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
         margin: 15px;
         width: 354px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 270px;
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
     }
 }
 .benefits__container {
@@ -34,6 +40,9 @@ display: flex;
     background-color: #F5F4FA;
     @media screen and (min-width:768px) {
         width: 354px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 270px;
     }
 }
 

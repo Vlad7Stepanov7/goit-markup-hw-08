@@ -1,10 +1,20 @@
 .form-footer {
-    margin-bottom: 60px;
-    text-align: center;
+    @media screen and (max-width:1199px) {
+        margin-bottom: 60px;
+            text-align: center;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+        width: 570px;
+        margin-left: 93px;
+    }
+   
 }
 
 .form-footer__field {
-    margin-bottom: 20px;
+    @media screen and (max-width:1199px) {
+        margin-bottom: 20px;
+    } 
 }
 
 .form-footer__label {
@@ -27,6 +37,10 @@
     border-radius: 4px;
     background-color: #2F303A;
     color: #ffffff;
+
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
 }
 
 .button-footer {
@@ -52,6 +66,10 @@
     color: #FFFFFF;
     cursor: pointer;
 
+    @media screen and (min-width:1200px) {
+        margin-right: 0;
+        margin-left: 12px;
+    }
 }
 
 .button-footer-icon {
