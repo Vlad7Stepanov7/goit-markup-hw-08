@@ -8,7 +8,7 @@
 .benefits__list {
     display: flex;
         flex-wrap: wrap;
- @media screen and (max-width:768px) {
+ @media screen and (min-width:768px) and (max-width:1199px) {
     margin: -15px;
  }
 }
@@ -57,7 +57,7 @@ display: flex;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        @media screen and (max-width:480px) {
+        @media screen and (min-width:480px) and (max-width:767px) {
             text-align: center;
         }
         

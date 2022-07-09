@@ -47,15 +47,6 @@
         }
     }
 }
-.img {
-    width: 450px;
-    @media screen and (min-width:768px) {
-        width: 354px;
-    }
-    @media screen and (min-width:1200px) {
-        width: 270px;
-    }
-}
 .team__container-members {
     padding-top: 30px;
     padding-bottom: 24px;

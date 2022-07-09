@@ -21,23 +21,21 @@
             }
     }
     @media screen and (min-width:768px) {
-        // width: calc((100%-30px)/2);
         margin: 15px;
         width: 354px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 370px;
     }
    
 }
 .img {
-    width: 450px;
-    @media screen and (min-width:768px) {
-        width: 354px;
+    @media screen and (min-width:1200px) {
+        width: 370px;
     }
-        @media screen and (min-width:1200px) {
-            width: 270px;
-        }
 }
 .list-works__container-texno {
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
         height: 146.91px;
     }
 }
@@ -48,11 +46,7 @@
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     letter-spacing: 0.06em;
-    
-        @media screen and (min-width:768px) {
-           
-        }
-                
+                  
 }
 
 .list-works__title {

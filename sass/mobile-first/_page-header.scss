@@ -17,9 +17,6 @@ position: relative;
     }
 }
 .page-header__button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 40px;
     height: 40px;
     padding: 0;
@@ -34,8 +31,12 @@ position: relative;
  z-index: 10;
 }
 .page-header__icon-close {
-    width: 40px;
-    height: 40px;
+    
+    .page-header__button:hover &,
+    .page-header__button:focus & {
+       fill: $accent-color;
+    }
+    
     .page-header__button & {
         display: none;
     }
@@ -45,25 +46,19 @@ position: relative;
     }
 }
 .page-header__icon-open {
-    fill: #000000;
-    width: 40px;
-    height: 40px;
+    .page-header__button:hover &,
+    .page-header__button:focus & {
+        fill: $accent-color;
+    }
+    
 .page-header__button.is-open & {
     display: none;
+    width: 40px;
+        height: 40px;
 }
 }
 
-// .page-header__menu-icon {
-//     width: 40px;
-//     height: 40px;
-//     fill: currentColor;
 
-//     .page-header__button:hover &,
-//     .page-header__button:focus & {
-//         fill: $accent-color;
-//     }
-
-// }
 .page-header__nav {
     @media screen and (max-width:480px) {
         margin-bottom: 302px;
@@ -139,6 +134,9 @@ display: inline-block;
 }
 .page-header__container-links {
     @media screen and (max-width:480px) {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column-reverse;
         margin-bottom: 64px;
     }
  
