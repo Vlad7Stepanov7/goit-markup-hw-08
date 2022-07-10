@@ -1,6 +1,8 @@
 
 .clients {
-
+@media screen and (max-width:767px) {
+    padding-bottom: 68px;
+}
 }
 .clients__title {
     margin-bottom: 30px;
@@ -9,6 +11,11 @@ font-weight: 700;
     line-height: 1.17;
     text-align: center;
     
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+            line-height: 1.16;
+            margin-bottom: 50px;
+    }
 }
 .clients__list {
 display: flex;

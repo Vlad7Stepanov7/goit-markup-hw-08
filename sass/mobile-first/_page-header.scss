@@ -60,7 +60,7 @@ position: relative;
 
 
 .page-header__nav {
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:767px) {
         margin-bottom: 302px;
     }
 }
@@ -76,7 +76,7 @@ position: relative;
 }
 }
 .list-nav__items {
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:767px) {
         &:not(:last-child) {
                 margin-bottom: 32px;
             }
@@ -133,7 +133,7 @@ display: inline-block;
  }
 }
 .page-header__container-links {
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:767px) {
        display: flex;
        flex-wrap: wrap;
        flex-direction: column-reverse;
@@ -168,7 +168,7 @@ display: inline-block;
     font-size: 34px;
     line-height: 1.17;
     color: $accent-color;
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:767px) {
         margin-bottom: 32px;
     }
     
